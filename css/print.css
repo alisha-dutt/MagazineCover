@@ -1,0 +1,158 @@
+/* custom font */
+/* playfair display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@font-face{
+    font-family: Vogue;
+    src: url(../fonts/Vogue.ttf);
+}
+@font-face{
+    font-family:'Americana-Italic Regular';
+    src:url(../fonts/Americana-Italic\ Regular.ttf);
+}
+
+/* magazine image */
+div.image{
+    background-image: url(../images/lana-del-rey-plain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 600px;
+    margin:10px auto;
+    padding:2px 2px;
+}
+
+
+/* using flex layout */
+div.container-1{
+    display: flex;
+    /* setting flex direction to column from default row */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;   
+}
+
+div.container-1 h1.main{
+    margin: 1px 1px;
+    font-size: 140px;
+    color: #f4f4f4;
+    height: 117px;
+    font-family: Vogue;
+    font-weight: normal;
+    letter-spacing: -8px;
+    margin-top: -20px;
+}
+
+div.container-1 h6.submain{
+    margin: 0px;
+    align-self: flex-end;
+    color: #f4f4f4;
+    margin-right: 14px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    font-size: 8px;
+}
+/* using grid layout */
+div.container-2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(1,1fr);
+    height: 230px;
+}
+
+div.container-2 div.text-1{
+    height: 115px;
+    color: #fff;
+    justify-self: flex-start;
+    align-self: flex-start;
+    line-height: 1em;
+    margin-left:-30px;
+    font-size: larger;    
+}
+ul li{
+    list-style-type: none;
+    color: #fff;
+}
+
+ul li.list1{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+ul li.list2{
+    font-family: 'Americana-Italic Regular';
+    font-weight: lighter;
+    font-style: italic;
+}
+li:nth-child(4){
+    margin-top:5px;
+}
+li:nth-child(5){
+    font-size: 10px;
+    line-height: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 100px;
+}
+li:nth-child(6),li:nth-child(8){
+    font-weight: bolder;
+}
+li:nth-child(7){
+    font-size: larger;
+    margin-top: -2px;
+}
+li:nth-child(8){
+ font-size: small;
+ line-height: 12px;
+ margin-top: 4px;
+}
+ul li.list3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.container-2 .text-1 p.p1,div.container-2 .text-2 p.p2{
+margin: 1px;
+}
+/* using flex layout */
+div.container-3{
+  
+    display: flex;
+    flex-direction: column;
+      /* aligns items  aligns set inside content on cross axis */
+    align-items: center;
+    /* justify items  aligns set inside content on main axis */
+    justify-content: right;
+    height: 150px;
+    /* margin-top: 38px; */
+}
+
+div.container-3 div.text-2 p.p2{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 80px;
+    color: #f4f4f4;
+    margin: -16px;
+    height: 90px;
+    text-transform: uppercase;
+}
+div.container-4{
+    display: flex;
+    flex-direction: column;
+}
+img.barcode{
+    height: 50px;
+    width: auto;    
+    align-self: flex-end;
+    margin-top: 19px;
+}
+header h2.h2{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+}
+footer p.footer{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 800;
+}
