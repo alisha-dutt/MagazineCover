@@ -9,7 +9,11 @@
     font-family:'Americana-Italic Regular';
     src:url(../fonts/Americana-Italic\ Regular.ttf);
 }
-
+header{
+    background-image: url(../images/MagCover.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
 /* magazine image */
 div.image{
     background-image: url(../images/lana-del-rey-plain.jpg);
