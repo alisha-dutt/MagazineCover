@@ -12,7 +12,11 @@
 header{
     background-image: url(../images/MagCover.png);
     background-repeat: no-repeat;
-    background-size: cover;   
+    background-size: cover;
+    margin:10px auto;
+    margin-top:-60px;
+    width: 1162px;
+    height: 1000px;
 }
 /* magazine image */
 div.image{
